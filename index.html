@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+      <!-- font awesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -32,7 +33,8 @@
         <div class="row d-flex justify-content-between">
           <div class="col-lg-5">
             <div class="d-flex flex-column"></div>
-            <h5 class="text-primary fw-bold">Booking</h5>
+            <a href="index.html" style="font-size: 1.5rem;" class="text-primary fw-bold text-decoration-none">Booking</a>
+
             <div class="d-flex align-item-center pt-3">
               <div class="btn btn-blue text-white fw-bold active" data-option="flight" onclick="loadContent('flight')">Flight</div>
               <div class="btn btn-primary text-white fw-bold mx-1" data-option="hotel" onclick="loadContent('hotel')">Hotel</div>
@@ -54,6 +56,7 @@
           </div>
         </div>
       </div>
+        <!-- flight -->
       <div id="flightContent" class="content pl-3">
         <!-- Content for Flight -->
         <div class="flightimg d-none d-md-flex d-xl-flex flex-column">
@@ -393,33 +396,33 @@
             <div class="col-md-4 mb-3">
               <div class="d-flex align-items-center">
                 <i class="fas fa-plane fa-lg me-2"></i>
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="mb-0">Explore the best flight deals from anywhere, to everywhere, then book with no fees</p>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="d-flex align-items-center">
                 <i class="fas fa-calculator fa-lg me-2"></i>
-                <p class="mb-0">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mb-0">Compare flight deals from over 1000 providers, and choose the cheapest, fastest or lowest-emission tickets</p>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="d-flex align-items-center">
                 <i class="fas fa-tag fa-lg me-2"></i>
-                <p class="mb-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="mb-0">Find the cheapest month - or even day - to fly, and set up Price Alerts to book when the price is right</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="container">
+        <div class="container mt-5" id="flightdeal">
           <h1>Flight deals from Pakistan</h1>
           <p>Here are the flight deals with the lowest prices. Act fast – they all depart within the next three months.</p>
-          <div class="row row-cols-1 row-cols-md-3 g-4 no-border-bottom">
+          <div class="row row-cols-1 row-cols-md-3 g-4 no-border-bottom mt-3">
             <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+              <div class="card border border-0">
+                <img src="./assetts/lahore.webp" height="239px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
+                  <h5 class="card-title">Lahore</h5>
                   <p class="card-text">Pakistan</p>
                   <div class="d-flex justify-content-between">
                     <p>Sat,30 Mar</p>
@@ -430,11 +433,25 @@
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+              <div class="card border border-0">
+                <img src="./assetts/Muscat.webp" height="239px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
-                  <p class="card-text">Pakistan</p>
+                  <h5 class="card-title">Muscat</h5>
+                  <p class="card-text">Oman</p>
+                  <div class="d-flex justify-content-between">
+                    <p>Sat,6 April</p>
+                    <span>Direct</span>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border border-0">
+                <img src="./assetts/Dubai.jpg" height="239px" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                  <h5 class="card-title">Dubai</h5>
+                  <p class="card-text">United Arab Emirates</p>
                   <div class="d-flex justify-content-between">
                     <p>Sat,30 Mar</p>
                     <span>Direct</span>
@@ -444,13 +461,13 @@
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+              <div class="card border border-0">
+                <img src="./assetts/Rihada.jpg" height="239px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
-                  <p class="card-text">Pakistan</p>
+                  <h5 class="card-title">Riyadh</h5>
+                  <p class="card-text">Saudi Arabia</p>
                   <div class="d-flex justify-content-between">
-                    <p>Sat,30 Mar</p>
+                    <p>Wed,10 April</p>
                     <span>Direct</span>
                   </div>
                 </div>
@@ -458,13 +475,13 @@
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+              <div class="card border border-0">
+                <img src="./assetts/istanbul.jpg" height="239px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
-                  <p class="card-text">Pakistan</p>
+                  <h5 class="card-title">Istanbul</h5>
+                  <p class="card-text">Turkey</p>
                   <div class="d-flex justify-content-between">
-                    <p>Sat,30 Mar</p>
+                    <p>Tue,21 May</p>
                     <span>Direct</span>
                   </div>
                 </div>
@@ -472,27 +489,13 @@
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+              <div class="card border border-0">
+                <img src="./assetts/doha.jpg" height="239px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
-                  <p class="card-text">Pakistan</p>
+                  <h5 class="card-title">Duha</h5>
+                  <p class="card-text">Qatar</p>
                   <div class="d-flex justify-content-between">
-                    <p>Sat,30 Mar</p>
-                    <span>Direct</span>
-                  </div>
-                </div>
-               
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
-                <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
-                  <p class="card-text">Pakistan</p>
-                  <div class="d-flex justify-content-between">
-                    <p>Sat,30 Mar</p>
+                    <p>Fri,5 April</p>
                     <span>Direct</span>
                   </div>
                 </div>
@@ -502,7 +505,7 @@
           </div>
         </div>
         
-        <div class="container">
+        <div class="container mt-5">
           <div class="row border p-3 mt-3 rounded-3" >
            
             <div class="col-12 d-flex align-item-center gap-2 ">
@@ -512,93 +515,85 @@
           </div>
         </div>
          
-        <div class="container mt-3">
+        <div class="container mt-5" id="flightfaq">
           <h1>Finding flight deals: frequently asked questions</h1>
           <div class="faq">
             <div class="question">
-              <span>Lorem ipsum dolor sit amet?</span>
+              <span>How can I find the best flight deals?</span>
               <span class="plus-icon">+</span>
             </div>
             <div class="answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              Search for flights, but don’t enter a departure date. Instead, hit ‘Whole month', then select ‘Cheapest month’. You’ll see exactly which days are cheapest to fly out and then return back to Pakistan.
+<br/>
+              Be spontaneous and bag a flight deal anywhere! If you know when you want to travel but you're flexible on where, Everywhere Search shows you the best airfare deals from your chosen location. Simply enter your departure city or airport, select your dates and search ‘Everywhere’.
             </div>
           </div>
           <div class="faq">
             <div class="question">
-              <span>Lorem ipsum dolor sit amet?</span>
+              <span>How can I find the best last minute flight deals?</span>
               <span class="plus-icon">+</span>
             </div>
             <div class="answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              Sometimes it’s worth waiting until the last minute to see if airlines reduce the price of unsold seats on their flights – but this can be a gamble. Here are some ways to bag a great flight ticket deal a week or two before flying using our flight search:
+
             </div>
           </div>
           <div class="faq">
             <div class="question">
-              <span>Lorem ipsum dolor sit amet?</span>
+              <span>How can I stay updated on flight deals and low fares?</span>
               <span class="plus-icon">+</span>
             </div>
             <div class="answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              If you’ve got a trip in mind but you’re not ready to book, there's no pressure. You can keep an eye on prices in two ways.
+<br/>
+Set up a Price Alert – we’ll watch fares for you, and let you know via email if they rise or fall.
             </div>
           </div>
           <div class="faq">
             <div class="question">
-              <span>Lorem ipsum dolor sit amet?</span>
+              <span>What happened after I have booked my flight?</span>
               <span class="plus-icon">+</span>
             </div>
             <div class="answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              Once you select your flight, you’ll book directly with one of our airline or travel partners, usually on their site. Your flight booking confirmation email and all the other info you'll need will come from them.
+              <br/>
+              Or if you book directly with Skyscanner, we'll send you your booking confirmation via email. If you've booked directly, you can check your account on our website or app to see the details of your booking. You can also get in touch with our dedicated Customer Care team if you need any help.
             </div>
           </div>
           <div class="faq">
             <div class="question">
-              <span>Lorem ipsum dolor sit amet?</span>
+              <span>Where should I book a flight to right now?</span>
               <span class="plus-icon">+</span>
             </div>
             <div class="answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              Dubai is trending among travellers right now. But if you want more inspiration, search Everywhere to find the best flight deal to anywhere.
             </div>
           </div>
         </div>
 
-        <div class="container mt-4 p-4 rounded-3" style="background-color:#eff3f8 ;">
+        <div class="container mt-5 p-5 rounded-3" style="background-color:#eff3f8 ;">
           <h1>Looking for the best flight deals to anywhere in the world?</h1>
           <p>It’s easy around here. 100 million travellers use us as their go-to tool, comparing flight deals and offers from more than 1,200 airlines and travel providers. With so many options to choose from in one place, you can say hello to savings, and goodbye to stress – here’s how.</p>
           <div class="row justify-content-center " style="margin-top: 70px;">
             <div class="col-lg-4 text-center mb-2 ">
               <div >
-                <img src="./assetts/clock.svg" class="card-img-top" alt="Image 1" style="width:30%">
+                <img src="./assetts/globe.svg" class="card-img-top mb-4" alt="Image 1" style="width:30%">
                 <h5 class="fw-bold">Search ‘Everywhere’, explore anywhere</h5>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <p class="">Enter your departure airport and travel dates, then hit ‘Everywhere’. You’ll see flights to every destination in the world, cheapest first.</p>
               </div>
             </div>
             <div class="col-lg-4 text-center mb-2">
               <div>
-                <img src="./assetts/clock.svg" class="card-img-top" alt="Image 2" style="width:30%">
+                <img src="./assetts/pricing.svg" class="card-img-top mb-5" alt="Image 2" style="width:30%">
                 <h5 class="fw-bold">Pay less, go further with transparent pricing</h5>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <p class="">The cheapest flight deals. No hidden fees. No funny business. With us, the price you see when you search is what you’ll pay.</p>
               </div>
             </div>
             <div class="col-lg-4 text-center mb-2">
               <div>
-                <img src="./assetts/clock.svg" class="card-img-top" alt="Image 3" style="width:30%">
+                <img src="./assetts/clock.svg" class="card-img-top mb-3" alt="Image 3" style="width:30%">
                 <h5 class="fw-bold">Book when it's best with Price Alerts</h5>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <p class="">Found your flight, but not quite ready to book? Set up Price Alerts and we’ll let you know when your flight price goes up or down.</p>
               </div>
             </div>
           </div>
@@ -609,7 +604,7 @@
         </div>
 
       </div>
-      
+        <!-- hotel -->
       <div id="hotelContent" class="content">
    
       
@@ -814,36 +809,36 @@
               >
               <input type="date" class="form-control" />
             </div>
-<div id="bookingContainer" style="width: 30%;">
-<label
-for=""
-class="form-label text-white mb-0 fs-8 fw-bold"
->Guests and rooms</label
->
-<input type="text" id="bookingInput" class="form-control" placeholder="adult,child,room">
-</div>
-
-<div id="bookingOptions">
-<div class="option-row">
-<span>Adult</span>
-<button onclick="decrement('adultCount')">-</button>
-<input type="number" id="adultCount" value="0">
-<button onclick="increment('adultCount')">+</button>
-</div>
-<div class="option-row">
-<span>Child</span>
-<button onclick="decrement('childCount')">-</button>
-<input type="number" id="childCount" value="0">
-<button onclick="increment('childCount')">+</button>
-</div>
-<div class="option-row">
-<span>Room</span>
-<button onclick="decrement('roomCount')">-</button>
-<input type="number" id="roomCount" value="0">
-<button onclick="increment('roomCount')">+</button>
-</div>
-<button id="doneButton" onclick="updateBooking()">Done</button>
-</div>
+            <div id="bookingContainer" style="width: 30%;" >
+              <label
+              for=""
+              class="form-label text-white mb-0 fs-8 fw-bold"
+              >Guests and rooms</label
+            >
+            <input type="text" id="bookingInput" class="form-control" placeholder="adult,child,room">
+          </div>
+          
+          <div id="bookingOptions">
+            <div class="option-row">
+              <span>Adult</span>
+              <button onclick="decrement('adultCount')">-</button>
+              <input type="number" id="adultCount" value="0">
+              <button onclick="increment('adultCount')">+</button>
+            </div>
+            <div class="option-row">
+              <span>Child</span>
+              <button onclick="decrement('childCount')">-</button>
+              <input type="number" id="childCount" value="0">
+              <button onclick="increment('childCount')">+</button>
+            </div>
+            <div class="option-row">
+              <span>Room</span>
+              <button onclick="decrement('roomCount')">-</button>
+              <input type="number" id="roomCount" value="0">
+              <button onclick="increment('roomCount')">+</button>
+            </div>
+            <button id="doneButton" onclick="updateBooking()">Done</button>
+          </div>
 
           </div>
             <!-- checkboxes -->
@@ -938,11 +933,14 @@ class="form-label text-white mb-0 fs-8 fw-bold"
           </div>
         </div>
 
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-3 g-4 no-border-bottom">
+        <div class="container " id="hotelrental">
+          <h1>Hotels in your home country</h1>
+          <p>Your next adventure may be closer than you think. Discover hotels just beyond your doorstep.</p>
+          <div class="row row-cols-1 row-cols-md-3 g-4 no-border-bottom mt-4">
+           
             <div class="col">
               <div class="card border-0">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+                <img src="./assetts/hotel-1.webp" height="210px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
                   <div class="card-subtitle mb-2 text-muted fs-8">Las Vegas</div>
                   <h5 class="card-title">Trump International Hotel</h5>
@@ -964,7 +962,7 @@ class="form-label text-white mb-0 fs-8 fw-bold"
             </div>
             <div class="col">
               <div class="card border-0">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+                <img src="./assetts/hotel-2.jpg" height="210px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
                   <div class="card-subtitle mb-2 text-muted fs-8">Las Vegas</div>
                   <h5 class="card-title">Trump International Hotel</h5>
@@ -987,7 +985,7 @@ class="form-label text-white mb-0 fs-8 fw-bold"
            
             <div class="col">
               <div class="card border-0">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+                <img src="./assetts/hotel-3.webp" height="210px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
                   <div class="card-subtitle mb-2 text-muted fs-8">Las Vegas</div>
                   <h5 class="card-title">Trump International Hotel</h5>
@@ -1009,7 +1007,7 @@ class="form-label text-white mb-0 fs-8 fw-bold"
             </div>
             <div class="col">
               <div class="card border-0">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+                <img src="./assetts/hotel-4.avif" height="210px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
                   <div class="card-subtitle mb-2 text-muted fs-8">Las Vegas</div>
                   <h5 class="card-title">Trump International Hotel</h5>
@@ -1031,7 +1029,7 @@ class="form-label text-white mb-0 fs-8 fw-bold"
             </div>
             <div class="col">
               <div class="card border-0">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+                <img src="./assetts/hotel-5.jpg" height="210px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
                   <div class="card-subtitle mb-2 text-muted fs-8">Las Vegas</div>
                   <h5 class="card-title">Trump International Hotel</h5>
@@ -1053,7 +1051,7 @@ class="form-label text-white mb-0 fs-8 fw-bold"
             </div>
             <div class="col">
               <div class="card border-0">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+                <img src="./assetts/hotel-6.jpg" height="210px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
                   <div class="card-subtitle mb-2 text-muted fs-8">Las Vegas</div>
                   <h5 class="card-title">Trump International Hotel</h5>
@@ -1083,23 +1081,23 @@ class="form-label text-white mb-0 fs-8 fw-bold"
         <div class="row justify-content-center p-5" style="margin-top: 70px;">
           <div class="col-lg-4 text-center mb-2 ">
             <div >
-              <img src="./assetts/clock.svg" class="card-img-top" alt="Image 1" style="width:30%">
-              <h5 class="fw-bold">Search ‘Everywhere’, explore anywhere</h5>
-              <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <img src="./assetts/hotel deals.svg" class="card-img-top mb-5" alt="Image 1" style="width:30%">
+              <h5 class="fw-bold">Great hotel deals</h5>
+              <p class="">We search for deals with the world’s leading hotels, and share our findings with you.</p>
             </div>
           </div>
           <div class="col-lg-4 text-center mb-2">
             <div>
-              <img src="./assetts/clock.svg" class="card-img-top" alt="Image 2" style="width:30%">
-              <h5 class="fw-bold">Pay less, go further with transparent pricing</h5>
-              <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <img src="./assetts/uptodate pricing.svg" class="card-img-top mb-5" alt="Image 2" style="width:30%">
+              <h5 class="fw-bold">Up-to-date pricing</h5>
+              <p class="">We always show you the most recent pricing overview we can find, so you know exactly what to expect.</p>
             </div>
           </div>
           <div class="col-lg-4 text-center mb-2">
             <div>
-              <img src="./assetts/clock.svg" class="card-img-top" alt="Image 3" style="width:30%">
-              <h5 class="fw-bold">Book when it's best with Price Alerts</h5>
-              <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <img src="./assetts/searching.svg" class="card-img-top mb-5" alt="Image 3" style="width:30%">
+              <h5 class="fw-bold">Precise searching</h5>
+              <p class="">Find hotels with swimming pools, free cancellation, and flexible booking. Or whatever matters most to you.</p>
             </div>
           </div>
         </div>
@@ -1110,7 +1108,7 @@ class="form-label text-white mb-0 fs-8 fw-bold"
 
       </div>
     
-      
+        <!-- car -->
       <div id="carContent" class="content">
         <!-- Content for Car Rental -->
         <div class="carimg d-none d-md-flex d-xl-flex flex-column">
@@ -1332,107 +1330,131 @@ class="form-label text-white mb-0 fs-8 fw-bold"
             <div class="col-md-4 mb-3">
               <div class="d-flex align-items-center">
                 <i class="fas fa-car fa-lg me-2"></i>
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="mb-0">Search for cheap car rental in seconds – anywhere in the world</p>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="d-flex align-items-center">
                 <i class="fas fa-calculator fa-lg me-2"></i>
-                <p class="mb-0">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mb-0">Compare deals from trusted car hire providers in one place</p>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="d-flex align-items-center">
                 <i class="fas fa-tag fa-lg me-2"></i>
-                <p class="mb-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="mb-0">Rent a car with a flexible booking policy or free cancellation</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="container">
-          <h1>Popular car rental destinations</h1>
+        <div class="container mt-5" id="carrentaldestination">
+          <h1 class="mb-5">Popular car rental destinations</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4 no-border-bottom">
             <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+              <div class="card border-0">
+                <img src="./assetts/malaysia.jpg" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
-                  <p class="card-text">Pakistan</p>
-                  <div class="d-flex justify-content-between">
-                    <p>Sat,30 Mar</p>
-                    <span>Direct</span>
-                  </div>
+                  <h5 class="card-title">Car hire in Malaysia</h5>
+                  <small class="card-text">Most popular car type:Economy</small>
+                  <div class="d-flex justify-content-end">
+                    <span>
+                        <small>From</small>
+                        <strong>Rs 9540</strong>
+                        <small>per day</small>
+                    </span>
+                </div>
+                
                 </div>
                
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+              <div class="card border-0">
+                <img src="./assetts/Dubai.jpg" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
-                  <p class="card-text">Pakistan</p>
-                  <div class="d-flex justify-content-between">
-                    <p>Sat,30 Mar</p>
-                    <span>Direct</span>
-                  </div>
+                  <h5 class="card-title">Car hire in Dubai</h5>
+                  <small class="card-text">Most popular car type:Economy</small>
+                  <div class="d-flex justify-content-end">
+                    <span>
+                        <small>From</small>
+                        <strong>Rs 7540</strong>
+                        <small>per day</small>
+                    </span>
+                </div>
+                
                 </div>
                
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+              <div class="card border-0">
+                <img src="./assetts/Muscat.webp" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
-                  <p class="card-text">Pakistan</p>
-                  <div class="d-flex justify-content-between">
-                    <p>Sat,30 Mar</p>
-                    <span>Direct</span>
-                  </div>
+                  <h5 class="card-title">Car hire in Muscat</h5>
+                  <small class="card-text">Most popular car type:Economy</small>
+                  <div class="d-flex justify-content-end">
+                    <span>
+                        <small>From</small>
+                        <strong>Rs 9540</strong>
+                        <small>per day</small>
+                    </span>
+                </div>
+                
                 </div>
                
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+              <div class="card border-0">
+                <img src="./assetts/Rihada.jpg" height="240px" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
-                  <p class="card-text">Pakistan</p>
-                  <div class="d-flex justify-content-between">
-                    <p>Sat,30 Mar</p>
-                    <span>Direct</span>
-                  </div>
+                  <h5 class="card-title">Car hire in Riyadh</h5>
+                  <small class="card-text">Most popular car type:Economy</small>
+                  <div class="d-flex justify-content-end">
+                    <span>
+                        <small>From</small>
+                        <strong>Rs 6540</strong>
+                        <small>per day</small>
+                    </span>
+                </div>
+                
                 </div>
                
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+              <div class="card border-0">
+                <img src="./assetts/istanbul.jpg" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
-                  <p class="card-text">Pakistan</p>
-                  <div class="d-flex justify-content-between">
-                    <p>Sat,30 Mar</p>
-                    <span>Direct</span>
-                  </div>
+                  <h5 class="card-title">Car hire in Istanbul</h5>
+                  <small class="card-text">Most popular car type:Compact</small>
+                  <div class="d-flex justify-content-end">
+                    <span>
+                        <small>From</small>
+                        <strong>Rs 8540</strong>
+                        <small>per day</small>
+                    </span>
+                </div>
+                
                 </div>
                
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="./assetts/car2.jpg" class="card-img-top" alt="Image 1">
+              <div class="card border-0">
+                <img src="./assetts/doha.jpg" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                  <h5 class="card-title">Karachi</h5>
-                  <p class="card-text">Pakistan</p>
-                  <div class="d-flex justify-content-between">
-                    <p>Sat,30 Mar</p>
-                    <span>Direct</span>
-                  </div>
+                  <h5 class="card-title">Car hire in Duha</h5>
+                  <small class="card-text">Most popular car type:Economy</small>
+                  <div class="d-flex justify-content-end">
+                    <span>
+                        <small>From</small>
+                        <strong>Rs 5540</strong>
+                        <small>per day</small>
+                    </span>
+                </div>
+                
                 </div>
                
               </div>
@@ -1440,104 +1462,89 @@ class="form-label text-white mb-0 fs-8 fw-bold"
           </div>
         </div>
  
-        <div class="container">
-          <div class="row border p-3 mt-3 rounded-3" >
+        <div class="container" style="background-color: #e0e3e5;">
+          <div class="row p-1 mt-3 rounded-3" >
            
             <div class="col-12 d-flex align-item-center gap-2 ">
               <i class="fas fa-info-circle pt-1"></i>
-              <p><strong>How did we find these deals?</strong>We looked at every economy class flight from Pakistan leaving in the next three months. These fares have the biggest savings when compared to the average price. They were found in the last four days and prices are subject to change.</p>
+              <p>These are estimated prices to help you choose from a large number of options. Each is an average based on the lowest car rental prices found for each destination over the last 15 days.</p>
             </div>
           </div>
         </div>
 
-        <div class="container mt-4">
+        <div class="container mt-5">
           <h1 class="text-center">Booking car hire in three simple steps</h1>
           <div class="row justify-content-center " style="margin-top: 70px;">
             <div class="col-lg-4 text-center mb-2 ">
               <div >
-                <img src="./assetts/clock.svg" class="card-img-top" alt="Image 1" style="width:30%">
-                <h5 class="fw-bold">Search ‘Everywhere’, explore anywhere</h5>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <img src="./assetts/srch car.svg"  class="card-img-top mb-5" alt="Image 1" style="width:30%">
+                <h5 class="fw-bold">Step 1: Search</h5>
+                <p class="">Enter your location and see what's available. From family-friendly SUVs to luxury convertibles, you’ll get a great price on every type of hire car.</p>
               </div>
             </div>
             <div class="col-lg-4 text-center mb-2">
               <div>
-                <img src="./assetts/clock.svg" class="card-img-top" alt="Image 2" style="width:30%">
-                <h5 class="fw-bold">Pay less, go further with transparent pricing</h5>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <img src="./assetts/compare.svg" class="card-img-top mb-5" alt="Image 2" style="width:30%">
+                <h5 class="fw-bold">Step 2: Compare</h5>
+                <p class="">Compare rental cars on fuel policy, mileage, provider rating, flexible booking, cleanliness, customer service and more.</p>
               </div>
             </div>
             <div class="col-lg-4 text-center mb-2">
               <div>
-                <img src="./assetts/clock.svg" class="card-img-top" alt="Image 3" style="width:30%">
-                <h5 class="fw-bold">Book when it's best with Price Alerts</h5>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <img src="./assetts/book.svg" class="card-img-top mb-5" alt="Image 3" style="width:30%">
+                <h5 class="fw-bold">Step 3: Book</h5>
+                <p class="">We compare car rental prices on 100s of sites for you, so once you've found your ride, you'll be redirected to book with the provider, with no extra fees.</p>
               </div>
             </div>
           </div>
         </div>
 
 
-        <div class="container mt-3">
+        <div class="container mt-3" id="carfaq">
           <h1>Finding your ride with us: FAQs</h1>
           <div class="faq">
             <div class="question">
-              <span>Lorem ipsum dolor sit amet?</span>
+              <span>Are there any extra fees added to the price advertised?</span>
               <span class="plus-icon">+</span>
             </div>
             <div class="answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              We account for any extra fees including insurance, local taxes and airport surcharges in the price shown when you search. Many of our insurance partners offer an excess refund option, which may prove cheaper than the rental companies excess waiver offered at the rental counter. Additional drivers or child seats can be purchased when you pick the car up.
             </div>
           </div>
           <div class="faq">
             <div class="question">
-              <span>Lorem ipsum dolor sit amet?</span>
+              <span>Can I return my hire car to a different location?</span>
               <span class="plus-icon">+</span>
             </div>
             <div class="answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              Yes, some car hire providers like Hertz and Europcar allow you to pick up a car in one location and drop it off in another. Simply select Return car to different location when you search with us. Note that you could be charged a one-way hire fee.
             </div>
           </div>
           <div class="faq">
             <div class="question">
-              <span>Lorem ipsum dolor sit amet?</span>
+              <span>Do I need a credit card to rent a car?</span>
               <span class="plus-icon">+</span>
             </div>
             <div class="answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              Although it might be smoother and faster to hire a car with a credit card, these days most major providers like Sixt, Avis, Budget, Hertz will allow you to hire car with a debit card if you have a certain amount of cash on it.
             </div>
           </div>
           <div class="faq">
             <div class="question">
-              <span>Lorem ipsum dolor sit amet?</span>
+              <span>Can I hire a van?</span>
               <span class="plus-icon">+</span>
             </div>
             <div class="answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              Of course! Whether you need to move furniture from one side of Rawalpindi to another, or you're organising a trip for up to 12 people, you can search for vans and filter by capacity or space for suitcases.
             </div>
           </div>
           <div class="faq">
             <div class="question">
-              <span>Lorem ipsum dolor sit amet?</span>
+              <span>What kind of vehicle can I hire?</span>
               <span class="plus-icon">+</span>
             </div>
             <div class="answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              We scan the internet for all kinds of vehicle rental deals, so you'll find everything from cheap and cheerful hatchbacks, to exotic sports cars on Skyscanner. You can even find deals on motor homes or passenger vans, too.
             </div>
           </div>
         </div>
@@ -1555,60 +1562,62 @@ class="form-label text-white mb-0 fs-8 fw-bold"
       <div class="container-fluid mt-5 p-5 bg-blue">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h3 class="text-orange pb-2">Explore</h3>
-            <p class="text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
-              beatae quia natus ducimus temporibus maiores consectetur culpa,
-              laudantium id nulla ipsa ullam labore amet porro.
+            <a href="index.html" style="font-size: 1.5rem;" class="text-primary fw-bold text-decoration-none">Booking</a>
+
+            <!-- <h3 class="text-orange pb-2"></h3> -->
+            <p class="text-white mt-3">
+              Book hassle-free flights worldwide with our intuitive platform. Enjoy seamless browsing and booking experiences for a variety of destinations.
             </p>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h3 class="text-orange pb-2">Partner</h3>
-            <p class="text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
-              beatae quia natus ducimus temporibus maiores consectetur culpa,
-              laudantium id nulla ipsa ullam labore amet porro.
-            </p>
+            <h3 class="text-orange pb-2">QUICK LINKS</h3>
+            <ul class="quick-links text-white">
+              <li><a href="#flightContent">Flight Booking</a></li>
+              <li><a href="#hotelContent" data-option="hotel" onclick="loadContent('hotel')">Hotel Booking</a></li>
+              <li><a href="#carContent" data-option="car" onclick="loadContent('car')">Car Rental</a></li>
+          </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h3 class="text-orange pb-2">Company</h3>
-            <p class="text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
-              beatae quia natus ducimus temporibus maiores consectetur culpa,
-              laudantium id nulla ipsa ullam labore amet porro.
-            </p>
+            <h3 class="text-orange pb-2">Services</h3>
+            <ul class="quick-links text-white">
+              <li><a href="#flightdeal"  data-option="flight" onclick="loadContent('flight')">Best Flight Deals</a></li>
+              <li><a href="#flightfaq"  data-option="flight" onclick="loadContent('flight')">Flight FAQS</a></li>
+              <li><a href="#carfaq" data-option="car" onclick="loadContent('car')">Car FAQS</a></li>
+              <li><a  href="#carrentaldestination" data-option="car" onclick="loadContent('car')">Car Rental</a></li>
+              <li><a href="#hotelrental" data-option="hotel" onclick="loadContent('hotel')">Hotel Rental</a></li>
+
+          </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h3 class="text-orange pb-2">Help</h3>
+            <h3 class="text-orange pb-2">Newsletter</h3>
             <p class="text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
-              beatae quia natus ducimus temporibus maiores consectetur culpa,
-              laudantium id nulla ipsa ullam labore amet porro.
+              Contact us for any detail or assistance.
             </p>
           </div>
         </div>
       </div>
     </div>
-
+  <!-- bootstrap js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+      <!-- top btn ftnality -->
     <script>
-      // Initially load the Flight content
+     
       window.onload = function() {
         loadContent('flight');
       };
     
       function loadContent(option) {
-        // Hide all content elements
+       
         var contents = document.getElementsByClassName("content");
         for (var i = 0; i < contents.length; i++) {
           contents[i].style.display = "none";
         }
     
-        // Remove 'active' class from all buttons
+       
         var buttons = document.querySelectorAll(".btn");
         buttons.forEach(function(button) {
           button.classList.remove("active");
@@ -1616,13 +1625,13 @@ class="form-label text-white mb-0 fs-8 fw-bold"
           button.classList.add("btn-primary");
         });
     
-        // Show the selected content
+       
         var selectedContent = document.getElementById(option + "Content");
         if (selectedContent) {
           selectedContent.style.display = "block";
         }
     
-        // Add 'active' class to the selected button
+       
         var selectedButton = document.querySelector(".btn[data-option='" + option + "']");
         if (selectedButton) {
           selectedButton.classList.add("active");
@@ -1631,6 +1640,7 @@ class="form-label text-white mb-0 fs-8 fw-bold"
         }
       }
     </script>
+      <!-- guest,room ctrl in no of guest text input -->
   <script>
     const bookingInput = document.getElementById('bookingInput');
     const bookingOptions = document.getElementById('bookingOptions');

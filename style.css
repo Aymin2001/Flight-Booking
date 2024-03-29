@@ -38,29 +38,17 @@ background-color: #042759;
 .text-orange{
     color: #ff7b59;
 }
-/* Increase specificity for active class */
+/* btn active colour */
 .btn.active {
     background-color: #02122c;
 }
 
-  
+  /* button visibility control*/
 .content {
     display: none;
   }
 
-/*  */
-
-             
-
-/* #hotelContent{
-    background-image: linear-gradient(to right, #7B1FA2, #E91E63)
-} */
-
-  
-
-
-
-
+/*No of guest,room dialogue*/
 #bookingOptions {
     display: none;
     position: absolute;
@@ -72,6 +60,8 @@ background-color: #042759;
     border-radius: 5px;
     min-width: 200px;
   }
+  
+
   .option-row {
     display: flex;
     align-items: center;
@@ -82,7 +72,7 @@ background-color: #042759;
     width: 30px;
     text-align: center;
     margin: 0;
-    border: none; /* Remove border */
+    border: none; 
   }
   .option-row button {
     cursor: pointer;
@@ -91,13 +81,13 @@ background-color: #042759;
     background-color: #007bff;
     color: #ffffff;
     border-radius: 5px;
-    margin: 0 5px; /* Reduce space between plus and minus */
+    margin: 0 5px; 
   }
   .option-row button:hover {
     background-color: #0056b3;
   }
   .option-row span {
-    margin-right: 10px; /* Add more space between span text and buttons */
+    margin-right: 10px; 
   }
   #doneButton {
     cursor: pointer;
@@ -173,3 +163,32 @@ background-color: #042759;
     height: 60px;
    
   }
+
+
+/* footer*/
+  .quick-links {
+    display: flex;
+    flex-direction: column;
+    gap:0.7rem;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li {
+    display: inline-block; 
+    margin-right: 20px; 
+}
+
+.quick-links li:last-child {
+    margin-right: 0; 
+}
+
+.quick-links li a {
+    color: white; 
+    text-decoration: none; 
+}
+.quick-links li a::after {
+  content: ' →'; 
+  margin-left: 5px; 
+}
